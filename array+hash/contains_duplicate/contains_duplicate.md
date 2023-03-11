@@ -24,4 +24,4 @@ Constraints:
 - -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
 
 
-출처 : https://leetcode.com/problems/contains-duplicate/(
+출처 : https://leetcode.com/problems/contains-duplicate/
