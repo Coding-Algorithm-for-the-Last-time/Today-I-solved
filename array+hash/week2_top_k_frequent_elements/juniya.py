@@ -1,27 +1,8 @@
-# class Solution:
-#     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-#         hs = {}
-#         for i in nums:
-#             hs[i] = nums.count(i)
-#         hs1 = sorted(hs.items(), key=lambda x:x[1], reverse=True)
-#         result = []
-#         for i in range(k):
-#             result += [(hs1[i][0])]
-#         return result
+from collections import Counter
 
-
-
-nums = [1,1,1,2,2,3]
-k = 2
-
-hs = {}
-for i in nums:
-    hs[i] = nums.count(i)
-hs1 = sorted(hs.items(), key=lambda x:x[1], reverse=True)
-result = []
-for i in range(k):
-    result += [(hs1[i][0])]
-# return result
-
-
-print(result)
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        counter = Counter(nums)
+        hs1 = sorted(counter.items(), key=lambda x:x[1], reverse=True)
+        result = [x[0] for x in hs1[:k]]
+        return result
