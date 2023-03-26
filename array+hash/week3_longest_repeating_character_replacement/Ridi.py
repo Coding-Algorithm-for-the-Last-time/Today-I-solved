@@ -30,10 +30,12 @@ class Solution:
         l = 0
         # Optimization
         maxf = 0
+
         for r in range(len(s)):
             count[s[r]] = count.get(s[r], 0) + 1
             # 추가된 dict 원소와 현재 최댓값 비교해 현재 최댓값 미리 계산
             maxf = max(maxf, count[s[r]])
+            # maxf = 1
 
             while (r - l + 1) - maxf > k:
                 count[s[l]] -= 1

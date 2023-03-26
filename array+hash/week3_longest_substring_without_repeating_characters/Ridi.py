@@ -5,9 +5,11 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         print(s)
         res = 0
-        l, r = 0, 0
-        sub = []
-        while r < len(s):
+        l = 0
+        sub = list()
+
+        for r in range(len(s)):
+                        
             if s[r] not in sub:
                 sub.append(s[r])
                 if len(sub) > res:
