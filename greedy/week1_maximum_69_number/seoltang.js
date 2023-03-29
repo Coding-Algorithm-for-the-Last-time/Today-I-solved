@@ -7,6 +7,6 @@ var maximum69Number = function (num) {
   const index = nums.indexOf('6');
   if (index === -1) return num;
 
-  nums.splice(nums.indexOf('6'), 1, '9');
+  nums.splice(index, 1, '9');
   return Number(nums.join(''));
 };
