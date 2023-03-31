@@ -27,3 +27,25 @@ class Solution:
         # 두 수를 더해서 리턴
         num = sorted(str(num))
         return int(num[0] + num[2]) + int(num[1] + num[3])
+
+
+##########################################################
+
+# 리디님 코드 참고
+# Runtime 25 ms / Beats 92.83%
+# Memory 13.8 MB / Beats 92.59%
+class Solution:
+    def minimumSum(self, num: int) -> int:
+        nums = []
+        for _ in range(4):
+            nums.append(num % 10)
+            num = num // 10
+        nums.sort()
+        tens, res = 2, 0
+        for i in range(4):
+            if tens > 0:
+                res += nums[i] * 10
+                tens -= 1
+            else:
+                res += nums[i]
+        return res
