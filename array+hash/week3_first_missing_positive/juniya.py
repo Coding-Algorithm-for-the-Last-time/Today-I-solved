@@ -9,3 +9,5 @@ class Solution:
             return n+1
         else:
             return min(num_set)
+        
+
