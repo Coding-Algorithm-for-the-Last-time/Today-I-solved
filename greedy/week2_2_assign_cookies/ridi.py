@@ -18,3 +18,6 @@ class Solution:
             s.pop(0)
         
         return res
+
+    # Very Very Bad... Runtime Beats 5.2% / Memory Beats 96.28%
+                        #4559 ms          /  15.5 MB
