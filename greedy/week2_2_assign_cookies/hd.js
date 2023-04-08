@@ -20,8 +20,7 @@ var findContentChildren = function (g, s) {
 };
 
 // Runtime 168ms, 9.55%
-// Memory 
-49.5 MB, 65.4%
+// Memory 49.5 MB, 65.4%
 
 /**
  * @param {number[]} g
