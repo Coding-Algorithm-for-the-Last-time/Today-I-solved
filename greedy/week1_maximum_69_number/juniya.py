@@ -7,3 +7,5 @@ class Solution:
                 break
         
         return(int("".join(s)))
+    
+#가장 왼쪽부터 훑으면서 처음 나오는 6을 9로 바꿈.
