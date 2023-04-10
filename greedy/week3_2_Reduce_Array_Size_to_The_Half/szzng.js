@@ -1,9 +1,6 @@
 var minSetSize = function(arr) {
     const cnt = {}
-    arr.forEach(v=> {
-        if (v in cnt) cnt[v]+=1
-        else cnt[v]=1
-    })
+    arr.forEach(v=> cnt[v] = v in cnt? cnt[v]+1 : 1)
 
     const frequency = Object.values(cnt).sort((a,b)=>b-a)
     const half_len = parseInt(arr.length / 2)
