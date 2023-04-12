@@ -5,10 +5,13 @@ class Solution:
         g.sort()
         s.sort()
 
+        #TODO 길이 맞추기 작업 -> Szzng 풀이 참조
+
         res = 0
         while(len(s) != 0 and len(g) != 0 and max(s) >= min(g)):
             child = g[0]
             cookie = s[0]
+            #TODO 효율성 올리기! -> 다른사람 풀이 참조.
             if cookie >= child:
                 res += 1
                 g.pop(0)

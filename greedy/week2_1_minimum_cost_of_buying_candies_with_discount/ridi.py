@@ -5,6 +5,9 @@ def minimumCost(self, cost: List[int]) -> int:
     cost.sort(reverse=True)
     res = 0
 
+    # for loop 도는게 시간 복잡도 이득 없음
+    # 오히려 공간 복잡도 손해(필요 없는 변수 선언)
+
     loop = len(cost) // 3
     remain = len(cost) % 3
     for i in range(loop):
