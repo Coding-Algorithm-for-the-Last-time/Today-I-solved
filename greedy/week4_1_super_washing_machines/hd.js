@@ -20,3 +20,5 @@ var findMinMoves = function (machines) {
     [max, 0]
   )[0];
 };
+
+// Runtime 60 ms Beats 83.5%
