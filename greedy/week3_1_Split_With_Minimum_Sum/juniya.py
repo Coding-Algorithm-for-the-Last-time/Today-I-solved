@@ -17,7 +17,7 @@ class Solution:
                     break
 
             for i in keys:
-                if freq[i] >0:
+                if freq[i] >0:  
                     num2 += i
                     freq[i] -= 1
                     break
