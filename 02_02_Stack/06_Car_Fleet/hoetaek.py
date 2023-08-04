@@ -2,7 +2,7 @@ class Solution:
     def carFleet(self, target: int, position: list[int], speed: list[int]) -> int:
         cars = []
         for i in range(len(position)):
-            count = target -  position[i]) / speed[i]
+            count = target - position[i] / speed[i]
             cars.append((position[i], count))
         cars.sort(key=lambda x: x[0], reverse=True)
         maxV = 0
